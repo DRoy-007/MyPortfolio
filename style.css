@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+/* Page backgroud - Dark themed */
+body {
+    margin: 0;
+    background-color: #151325;
+    font-family: "Parkinsans", sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #100f1b;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 255, 255, 0.1);
+}
+
+/* Unordered list styling */
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* list items styling */
+.navbar li {
+    margin: 0 30px;
+    position: relative;
+}
+
+.navbar a{
+    color: #3bdae2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+/* underline glow effect */
+.navbar li::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #3bdae2;
+    box-shadow: 0 0 8px #3bdae2;
+    transition: width 0.3s;
+}
+
+/* hover or active link underline */
+.navbar li:hover::after, 
+.navbar li.active::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: #90f9ff;
+}
+
+/* about section layout */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+    gap: 100px;
+}
+
