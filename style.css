@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Share+Tech&display=swap');
 
 /* Page backgroud - Dark themed */
 body {
@@ -65,7 +66,60 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 10%;
+    padding: 40px 10%;
     gap: 100px;
 }
 
+/* text section */
+.about-text h1{
+    font-size: 48px;
+    color: #ff6b81;
+    text-shadow: 0 0 10px rgba(255, 107, 129, 0.7);
+    font-family: "Share Tech", sans-serif;
+    margin: 0 0 10px;
+}
+
+.about-text h3{
+    font-size: 20px;
+    color: #3bdae2;
+    font-family: "Share Tech", sans-serif;
+    margin-bottom: 40px;
+}
+
+/* buttons */
+.btn {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 2px solid #3bdae2;
+}
+
+.btn-outline {
+    color: #ffff66;
+    border-color: #ffff66;
+}
+
+.btn-outline:hover{
+    background-color: #ffff66;
+    color: #151325;
+    box-shadow: 0 0 10px #ffff66;
+}
+
+.btn-glow {
+    color: #3bdae2;
+}
+
+.btn-glow:hover {
+    background-color: #3bdae2;
+    color: #151325;
+    box-shadow: 0 0 15px #3bdae2;
+}
+
+.profile-pic {
+    position: relative;
+    width: 200px;
+    height: auto;
+    display: inline-block;
+}
