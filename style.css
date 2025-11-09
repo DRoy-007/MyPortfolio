@@ -119,7 +119,22 @@ body {
 
 .profile-pic {
     position: relative;
-    width: 200px;
-    height: auto;
+    width: 400px;
+    height: 450px;
     display: inline-block;
+    border-radius: 42%;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.479) 40%, transparent 80%);
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* image styling */
+.profile-pic img {
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
