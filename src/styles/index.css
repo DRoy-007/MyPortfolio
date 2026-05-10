@@ -1,0 +1,50 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* ── Global scroll & layout behaviour ── */
+html {
+  scroll-behavior: smooth;
+  /* Use visual viewport height so mobile browser chrome doesn't cause layout jumps */
+  height: 100%;
+}
+
+body {
+  background-color: #080810;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Ensure sections snap cleanly to full-viewport height on desktop */
+@media (min-width: 1024px) {
+  section {
+    scroll-snap-align: start;
+  }
+  /* Projects is a special case — contains scrollable content below the first screen */
+  #projects {
+    scroll-snap-align: none;
+  }
+}
+
+/* Custom scrollbar to match dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080810;
+}
+::-webkit-scrollbar-thumb {
+  background: #c0392b44;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c0392b88;
+}
+
+/* Selection colour */
+::selection {
+  background: rgba(192, 57, 43, 0.35);
+  color: #ffffff;
+}
