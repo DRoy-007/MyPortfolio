@@ -2,8 +2,6 @@
 
 A modern and responsive personal portfolio website built to showcase projects, skills, achievements, and passion for technology. Designed with smooth animations, clean UI, and a developer-focused aesthetic.
 
-![Portfolio Banner](https://via.placeholder.com/1200x400?text=MyPortfolio)
-
 ---
 
 ## 🌟 Features
