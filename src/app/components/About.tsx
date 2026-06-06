@@ -32,7 +32,7 @@ export function About() {
                 {/* Image */}
                 <div className="relative rounded-xl overflow-hidden border border-[#c0392b]/20">
                   <ImageWithFallback
-                    src="https://images.unsplash.com/photo-1617609277590-ec2d145ca13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXJrJTIwZmFudGFzeSUyMGNvZGUlMjBkZXZlbG9wZXIlMjBhZXN0aGV0aWN8ZW58MXx8fHwxNzc4Mjk2MzY3fDA&ixlib=rb-4.1.0&q=80&w=800"
+                    src="/assets/images/my-image.png"
                     alt="Developer workspace"
                     className="w-full aspect-[4/3] object-cover"
                   />
