@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { MapPin, GraduationCap } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import myImage from "../../assets/images/my-image.png";
 import { FadeIn } from "./shared/FadeIn";
 import { SectionHeader } from "./shared/SectionHeader";
 import { ABOUT } from "../data/portfolioData";
@@ -32,7 +33,7 @@ export function About() {
                 {/* Image */}
                 <div className="relative rounded-xl overflow-hidden border border-[#c0392b]/20">
                   <ImageWithFallback
-                    src="/assets/images/my-image.png"
+                    src={myImage}
                     alt="Developer workspace"
                     className="w-full aspect-[4/3] object-cover"
                   />
