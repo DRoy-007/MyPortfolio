@@ -66,7 +66,7 @@ export function About() {
                         className="text-white text-xs"
                         style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                       >
-                        1st Year B.Tech
+                        2nd Year B.Tech
                       </p>
                       <p
                         className="text-[#8888a8] text-xs"
