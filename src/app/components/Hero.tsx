@@ -179,7 +179,7 @@ export function Hero() {
           className="text-[#8888a8] max-w-xl leading-relaxed text-sm"
           style={{ fontFamily: "'Space Grotesk', sans-serif" }}
         >
-          A passionate first-year CSE student at{" "}
+          A passionate second-year CSE student at{" "}
           <span className="text-[#e74c3c]">Narula Institute of Technology</span>,
           building terminal-based dark fantasy games, exploring DSA, and crafting
           experiences where{" "}
