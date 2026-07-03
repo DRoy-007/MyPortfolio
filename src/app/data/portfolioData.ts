@@ -23,7 +23,7 @@ export const HERO = {
     "Terminal Wizard",
   ],
   description:
-    "A passionate first-year CSE student at Narula Institute of Technology, building terminal-based dark fantasy games, exploring DSA, and crafting experiences where code meets creativity.",
+    "A passionate second-year CSE student at Narula Institute of Technology, building terminal-based dark fantasy games, exploring DSA, and crafting experiences where code meets creativity.",
   github: "https://github.com/DRoy-007",
   stats: [
     { label: "Public Repos", value: "10+" },
@@ -35,14 +35,14 @@ export const HERO = {
 // ABOUT
 export const ABOUT = {
   intro: [
-    "Hey! I'm Debarpan Roy — a first-year CSE student at Narula Institute of Technology, Kolkata. Originally from Kirnahar, Birbhum, I'm driven by an obsession with programming, designing softwares and researching about AI.",
+    "Hey! I'm Debarpan Roy — a second-year CSE student at Narula Institute of Technology, Kolkata. Originally from Kirnahar, Birbhum, I'm driven by an obsession with programming, designing softwares and researching about AI.",
     "My journey started with C, grew into DSA through Striver's A2Z, GfG POTD, and now stretches into web development. When not debugging, I just stand up stretch out, refresh my mind and backing boom, bugs clear out.",
   ],
   quickFacts: [
     { label: "Hometown", value: "Kirnahar, Birbhum" },
     { label: "GitHub", value: "DRoy-007" },
     { label: "Institute", value: "Narula Institute of Technology" },
-    { label: "Branch", value: "CSE (1st Year)" },
+    { label: "Branch", value: "CSE (2nd Year)" },
   ],
   interests: [
     "Terminal Projects",
@@ -59,6 +59,7 @@ export const TECH_SKILLS = [
   { name: "C Programming", level: 85, color: "linear-gradient(90deg, #c0392b, #e74c3c)" },
   { name: "HTML / CSS", level:65, color: "linear-gradient(90deg, #e67e22, #f39c12)" },
   { name: "Java (Basics)", level: 45, color: "linear-gradient(90deg, #6c3483, #9b59b6)" },
+  { name: "Python", level: 25, color: "linear-gradient(90deg, #606c38, #8ab031)" },
   { name: "DSA & Algorithms", level: 35, color: "linear-gradient(90deg, #1a5276, #2980b9)" },
   { name: "Terminal / Bash", level: 60, color: "linear-gradient(90deg, #1e8449, #2ecc71)" },
 ] as const;
