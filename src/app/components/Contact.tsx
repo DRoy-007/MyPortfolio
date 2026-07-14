@@ -13,24 +13,24 @@ const COOLDOWN_MS = 60_000; // mirror server cooldown for UX
 
 function SocialIcon({ type }: { type: string }) {
   switch (type) {
-    case "github":    return <GithubIcon className="w-4 h-4" />;
-    case "linkedin":  return <LinkedInIcon className="w-4 h-4" />;
+    case "github": return <GithubIcon className="w-4 h-4" />;
+    case "linkedin": return <LinkedInIcon className="w-4 h-4" />;
     case "instagram": return <InstagramIcon className="w-4 h-4" />;
-    case "twitter":   return <XIcon className="w-4 h-4" />;
-    case "email":     return <Mail className="w-4 h-4" />;
-    default:          return null;
+    case "twitter": return <XIcon className="w-4 h-4" />;
+    case "email": return <Mail className="w-4 h-4" />;
+    default: return null;
   }
 }
 
 type Status = "idle" | "loading" | "success" | "error";
 
 export function Contact() {
-  const [name, setName]       = useState("");
-  const [email, setEmail]     = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [honeypot, setHoneypot] = useState("");
 
-  const [status, setStatus]   = useState<Status>("idle");
+  const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [cooldownSec, setCooldownSec] = useState(0);
   const cooldownRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -89,8 +89,8 @@ export function Contact() {
 
   const charColor =
     message.length > CHAR_LIMIT * 0.95 ? "text-[#e74c3c]" :
-    message.length > CHAR_LIMIT * 0.8  ? "text-[#e67e22]" :
-    "text-[#555570]";
+      message.length > CHAR_LIMIT * 0.8 ? "text-[#e67e22]" :
+        "text-[#555570]";
 
   const isDisabled = status === "loading" || cooldownSec > 0;
 
@@ -404,7 +404,7 @@ export function Contact() {
             className="text-[#555570] text-xs"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
-            <span className="text-[#c0392b]">DRoy-007</span> · Narula Institute of Technology
+            <span className="text-[#c0392b]">DRoy-007</span> · <a href="https://www.nit.ac.in/" target="_blank" rel="noopener noreferrer" className="hover:text-[#c0392b] transition-colors duration-200 underline underline-offset-2">Narula Institute of Technology</a>
           </p>
         </div>
       </div>
