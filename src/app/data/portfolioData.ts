@@ -97,20 +97,20 @@ export const CATEGORY_COLORS: Record<string, { bg: string; text: string; border:
 
 // PROJECTS
 export const FEATURED_PROJECT = {
-  title: "Dark Fantasy Hangman",
-  subtitle: "Hangman Game in C",
+  title: "VeriDoc e-sign Validator",
+  subtitle: "E-signature validation tool",
   description:
-    "An advanced terminal-based Hangman with a dark \"cursed ritual\" theme. Built entirely in C — featuring atmospheric storytelling, blood-dripping ASCII art, and animated arrow-key navigation that transforms a classic game into an immersive experience.",
+    "A web application that validates electronic signatures on documents, ensuring authenticity and compliance. Built with modern web technologies for secure e-document handling.",
   features: [
-    "Terminal animations & ASCII art",
-    "Blood-dripping effects for wrong guesses",
-    "Story-based dark fantasy progression",
-    "Typewriter text & achievement banners",
-    "Save/load score system via text files",
-    "Cross-platform OS-specific terminal",
+    "Upload and verify digital signatures",
+    "Support for multiple e-sign formats",
+    "Real-time validation feedback",
+    "Secure backend verification",
+    "User-friendly UI with progress tracking",
   ],
-  tags: ["C", "Terminal", "Cross-platform", "149 KB"],
-  href: "https://github.com/DRoy-007/Hangman_Game_in_C",
+  tags: ["React", "Node.js", "TypeScript", "E-signature", "Security"],
+  href: "https://github.com/DRoy-007/VeriDoc---esign-Validator",
+  liveHref: "https://veridoc-esign-validator.vercel.app",
 };
 
 export const OTHER_PROJECTS = [
@@ -134,6 +134,13 @@ export const OTHER_PROJECTS = [
     tags: ["Java", "OOP", "CLI"],
     status: "Public" as const,
     href: "https://github.com/DRoy-007/CLIBanking",
+  },
+  {
+    title: "Hangman Game in C",
+    desc: "An advanced terminal-based Hangman with a dark \"cursed ritual\" theme, built entirely in C",
+    tags: ["C", "Terminal", "Cross-platform"],
+    status: "Public" as const,
+    href: "https://github.com/DRoy-007/Hangman_Game_in_C",
   },
   {
     title: "mindmate",

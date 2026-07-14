@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Terminal, Skull, Swords, Flame, Star, BookOpen, ExternalLink } from "lucide-react";
+import { Shield, Upload, FileCheck, Lock, BarChart3, Globe, ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
+import veridocPreview from "../../assets/images/veridoc_preview.png";
 import { FadeIn } from "./shared/FadeIn";
 import { SectionHeader } from "./shared/SectionHeader";
 import { FEATURED_PROJECT, OTHER_PROJECTS } from "../data/portfolioData";
@@ -23,18 +24,11 @@ function CardFadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?
 }
 
 const FEATURE_ICONS = [
-  <Terminal className="w-3.5 h-3.5" />,
-  <Skull className="w-3.5 h-3.5" />,
-  <Swords className="w-3.5 h-3.5" />,
-  <Flame className="w-3.5 h-3.5" />,
-  <Star className="w-3.5 h-3.5" />,
-  <BookOpen className="w-3.5 h-3.5" />,
-];
-
-const RITUAL_MENUS = [
-  { text: "Begin the Ritual", color: "text-[#e74c3c]" },
-  { text: "Reignite the Curse", color: "text-[#9b59b6]" },
-  { text: "Escape the Fate", color: "text-[#8888a8]" },
+  <Upload className="w-3.5 h-3.5" />,
+  <FileCheck className="w-3.5 h-3.5" />,
+  <BarChart3 className="w-3.5 h-3.5" />,
+  <Lock className="w-3.5 h-3.5" />,
+  <Globe className="w-3.5 h-3.5" />,
 ];
 
 const STATUS_STYLES = {
@@ -66,11 +60,10 @@ export function Projects() {
               <div className="absolute -inset-px bg-gradient-to-br from-[#c0392b]/15 via-transparent to-[#6c3483]/15 rounded-2xl pointer-events-none" />
 
               <div className="relative grid lg:grid-cols-2 gap-0 h-full">
-                {/* ── Left: Terminal mockup ── */}
-                <div className="p-5 lg:p-7 flex flex-col gap-4 overflow-hidden">
-                  {/* Terminal window */}
-                  <div className="rounded-lg bg-[#0a0a14] border border-white/10 overflow-hidden flex-shrink-0">
-                    {/* Title bar */}
+                {/* ── Left: Project preview image ── */}
+                <div className="p-5 lg:p-7 flex items-center justify-center overflow-hidden">
+                  <div className="rounded-lg border border-white/10 overflow-hidden shadow-xl shadow-[#c0392b]/10 w-full">
+                    {/* Browser-style title bar */}
                     <div className="flex items-center gap-1.5 px-4 py-2.5 bg-[#111120] border-b border-white/5">
                       <div className="w-2.5 h-2.5 rounded-full bg-[#e74c3c]" />
                       <div className="w-2.5 h-2.5 rounded-full bg-[#f39c12]" />
@@ -79,56 +72,16 @@ export function Projects() {
                         className="ml-2 text-[#8888a8] text-xs"
                         style={{ fontFamily: "'JetBrains Mono', monospace" }}
                       >
-                        hangman_ritual.c — DRoy-007
+                        VeriDoc — eSign Validator
                       </span>
                     </div>
-
-                    {/* Terminal content */}
-                    <div className="p-4 space-y-2" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                      <p className="text-[#8888a8] text-xs">
-                        <span className="text-[#c0392b]">$</span>{" "}
-                        <span className="text-white">./hangman</span>
-                      </p>
-                      <pre className="text-[#c0392b] text-xs leading-tight opacity-90">{`  ████████
- ██      ██
- ██  ██  ██
- ██      ██
-  ████████
-      |
-   ═══════`}</pre>
-                      <p className="text-[#6c3483] text-xs">═══ THE CURSED RITUAL ═══</p>
-                      {RITUAL_MENUS.map((item, i) => (
-                        <p key={i} className={`text-xs ${item.color}`}>
-                          [{i + 1}] {item.text}
-                        </p>
-                      ))}
-                      <p className="text-[#8888a8] text-xs">
-                        <span className="text-[#2ecc71]">→</span> Choose your fate:{" "}
-                        <span className="animate-pulse text-[#c0392b]">_</span>
-                      </p>
+                    <div className="bg-[#f5f0eb]">
+                      <img
+                        src={veridocPreview}
+                        alt="VeriDoc e-sign Validator preview"
+                        className="w-full h-auto object-contain max-h-[45vh]"
+                      />
                     </div>
-                  </div>
-
-                  {/* Code snippet */}
-                  <div className="rounded-lg bg-[#0f0f1a] border border-white/5 p-3.5 flex-shrink-0">
-                    <p className="text-xs mb-1" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                      <span className="text-[#6c3483]">// </span>
-                      <span className="text-[#5dade2]">C</span>{" · "}
-                      <span className="text-[#5dade2]">Cross-platform</span>{" · "}
-                      <span className="text-[#5dade2]">Terminal</span>
-                    </p>
-                    <p className="text-[#2ecc71] text-xs" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                      {`void animate_blood_drop(int wrong) {`}
-                    </p>
-                    <p className="text-[#8888a8] text-xs ml-4" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                      {`for(int i=0; i<wrong; i++)`}
-                    </p>
-                    <p className="text-[#8888a8] text-xs ml-8" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                      {`printf("\\033[31m▓\\033[0m");`}
-                    </p>
-                    <p className="text-[#2ecc71] text-xs" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                      {`}`}
-                    </p>
                   </div>
                 </div>
 
@@ -136,7 +89,7 @@ export function Projects() {
                 <div className="p-5 lg:p-7 border-t lg:border-t-0 lg:border-l border-white/5 flex flex-col justify-center">
                   {/* Badge */}
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#c0392b]/30 bg-[#c0392b]/10 mb-4 w-fit">
-                    <Skull className="w-3 h-3 text-[#c0392b]" />
+                    <Shield className="w-3 h-3 text-[#c0392b]" />
                     <span
                       className="text-[#c0392b] text-xs uppercase tracking-wider"
                       style={{ fontFamily: "'JetBrains Mono', monospace" }}
@@ -198,16 +151,28 @@ export function Projects() {
                     ))}
                   </div>
 
-                  <a
-                    href={FEATURED_PROJECT.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-gradient-to-r from-[#c0392b] to-[#922b21] text-white hover:from-[#e74c3c] hover:to-[#c0392b] transition-all duration-300 shadow-lg shadow-[#c0392b]/20 w-fit text-sm"
-                    style={{ fontFamily: "'Space Grotesk', sans-serif" }}
-                  >
-                    <FaGithub className="w-4 h-4" />
-                    View on GitHub
-                  </a>
+                  <div className="flex flex-wrap gap-3">
+                    <a
+                      href={FEATURED_PROJECT.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-gradient-to-r from-[#c0392b] to-[#922b21] text-white hover:from-[#e74c3c] hover:to-[#c0392b] transition-all duration-300 shadow-lg shadow-[#c0392b]/20 w-fit text-sm"
+                      style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+                    >
+                      <FaGithub className="w-4 h-4" />
+                      View on GitHub
+                    </a>
+                    <a
+                      href={FEATURED_PROJECT.liveHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-gradient-to-r from-[#1a8a6e] to-[#15724f] text-white hover:from-[#2ecc71] hover:to-[#1a8a6e] transition-all duration-300 shadow-lg shadow-[#1a8a6e]/20 w-fit text-sm"
+                      style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      Live Preview
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
