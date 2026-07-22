@@ -98,7 +98,7 @@ export const CATEGORY_COLORS: Record<string, { bg: string; text: string; border:
 // PROJECTS
 export const FEATURED_PROJECT = {
   title: "PDFVerify",
-  subtitle: "E-signature validation tool",
+  subtitle: "Digital signature validation tool",
   description:
     "A web application that validates electronic signatures on documents, ensuring authenticity and compliance. Built with modern web technologies for secure e-document handling.",
   features: [
