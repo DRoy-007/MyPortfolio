@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Shield, Upload, FileCheck, Lock, BarChart3, Globe, ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
-import veridocPreview from "../../assets/images/veridoc_preview.png";
+import pdfverifyPreview from "../../assets/images/pdfverify_preview.png";
 import { FadeIn } from "./shared/FadeIn";
 import { SectionHeader } from "./shared/SectionHeader";
 import { FEATURED_PROJECT, OTHER_PROJECTS } from "../data/portfolioData";
@@ -72,13 +72,13 @@ export function Projects() {
                         className="ml-2 text-[#8888a8] text-xs"
                         style={{ fontFamily: "'JetBrains Mono', monospace" }}
                       >
-                        VeriDoc — eSign Validator
+                        PDFVerify
                       </span>
                     </div>
                     <div className="bg-[#f5f0eb]">
                       <img
-                        src={veridocPreview}
-                        alt="VeriDoc e-sign Validator preview"
+                        src={pdfverifyPreview}
+                        alt="PDFVerify - e-sign Validator preview"
                         className="w-full h-auto object-contain max-h-[45vh]"
                       />
                     </div>

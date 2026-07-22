@@ -97,7 +97,7 @@ export const CATEGORY_COLORS: Record<string, { bg: string; text: string; border:
 
 // PROJECTS
 export const FEATURED_PROJECT = {
-  title: "VeriDoc e-sign Validator",
+  title: "PDFVerify",
   subtitle: "E-signature validation tool",
   description:
     "A web application that validates electronic signatures on documents, ensuring authenticity and compliance. Built with modern web technologies for secure e-document handling.",
@@ -109,8 +109,8 @@ export const FEATURED_PROJECT = {
     "User-friendly UI with progress tracking",
   ],
   tags: ["React", "Node.js", "TypeScript", "E-signature", "Security"],
-  href: "https://github.com/DRoy-007/VeriDoc---esign-Validator",
-  liveHref: "https://veridoc-esign-validator.vercel.app",
+  href: "https://github.com/DRoy-007/PDFVerify",
+  liveHref: "https://pdfverify.vercel.app",
 };
 
 export const OTHER_PROJECTS = [
@@ -119,7 +119,7 @@ export const OTHER_PROJECTS = [
     desc: "A website developed with the help of vibe-coding and vibe-debugging with manual descriptions",
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS"],
     status: "Live" as const,
-    href: "https://github.com/DRoy-007/Clg-DSA-Problems",
+    href: "https://github.com/DRoy-007/MyPortfolio",
   },
   {
     title: "Stone Paper Scissor",
